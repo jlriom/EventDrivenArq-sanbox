@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{7741A0AD-D594-4006-8278-31B711B11751}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Data.EntityFrameworkCore\Common.Data.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Data.Documents.EntityFrameworkCore\Sandbox.Shared.Data.Documents.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.ReadStack.Core\Sandbox.Doc.ReadStack.Core.csproj" />
+  </ItemGroup>
+</Project>

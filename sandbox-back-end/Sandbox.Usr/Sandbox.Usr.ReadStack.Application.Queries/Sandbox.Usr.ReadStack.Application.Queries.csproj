@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{573CD992-97F7-4693-8AD9-7C3FA210F4C7}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+  </ItemGroup>
+</Project>

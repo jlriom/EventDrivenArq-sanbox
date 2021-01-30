@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>{82C7D7F8-7812-42A0-8D21-462826AB28C9}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Data.Blob.EntityFrameworkCore\Sandbox.Shared.Data.Blob.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Application.Queries\Sandbox.BlobStorage.ReadStack.Application.Queries.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Application.QueryHandlers\Sandbox.BlobStorage.ReadStack.Application.QueryHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Core\Sandbox.BlobStorage.ReadStack.Core.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Infrastructure\Sandbox.BlobStorage.ReadStack.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.WriteStack.Application.CommandHandlers\Sandbox.BlobStorage.WriteStack.Application.CommandHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.WriteStack.Application.Commands\Sandbox.BlobStorage.WriteStack.Application.Commands.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Api\Sandbox.Shared.Api.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.WriteStack.Infrastructure\Sandbox.BlobStorage.WriteStack.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

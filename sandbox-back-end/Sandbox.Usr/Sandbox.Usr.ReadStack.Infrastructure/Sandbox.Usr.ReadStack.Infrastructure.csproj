@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{B7C21976-7123-473D-8A2C-AF6B81B9BC5E}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.ReadStack.Core\Sandbox.Usr.ReadStack.Core.csproj" />
+  </ItemGroup>
+</Project>

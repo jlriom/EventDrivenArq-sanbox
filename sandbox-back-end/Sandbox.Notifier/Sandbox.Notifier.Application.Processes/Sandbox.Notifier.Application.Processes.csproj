@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{f01ca022-84f8-4971-87db-cf832630ddcd}</ProjectGuid>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.Messages\Sandbox.Shared.Messaging.Messages.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.RabbitMq\Sandbox.Shared.Messaging.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{A27D0DCB-0702-4692-9BC1-57034B2FBB1A}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Data.Core\Common.Data.Core.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Domain\Common.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{fbeeb26b-fedf-408c-9242-159dd0258555}</ProjectGuid>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Services.BlobStorage\Common.Application.Services.BlobStorage.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.Messages\Sandbox.Shared.Messaging.Messages.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.RabbitMq\Sandbox.Shared.Messaging.RabbitMq.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Domain\Sandbox.Doc.WriteStack.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

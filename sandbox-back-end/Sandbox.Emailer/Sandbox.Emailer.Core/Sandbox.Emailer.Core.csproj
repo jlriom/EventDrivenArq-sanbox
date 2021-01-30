@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{bd65f969-7322-4576-a402-604fac808eb1}</ProjectGuid>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.Messages\Sandbox.Shared.Messaging.Messages.csproj" />
+  </ItemGroup>
+
+</Project>

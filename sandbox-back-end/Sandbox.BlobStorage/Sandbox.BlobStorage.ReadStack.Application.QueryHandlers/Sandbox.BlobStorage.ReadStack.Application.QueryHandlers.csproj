@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{82C99D62-C14F-49DD-A06E-452900F8571F}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Application.Queries\Sandbox.BlobStorage.ReadStack.Application.Queries.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Core\Sandbox.BlobStorage.ReadStack.Core.csproj" />
+  </ItemGroup>
+</Project>

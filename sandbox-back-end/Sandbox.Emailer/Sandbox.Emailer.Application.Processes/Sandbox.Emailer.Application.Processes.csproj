@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{747fd0fa-de6e-48ad-a3cf-07edfc19a555}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.Messages\Sandbox.Shared.Messaging.Messages.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.RabbitMq\Sandbox.Shared.Messaging.RabbitMq.csproj" />
+    <ProjectReference Include="..\Sandbox.Emailer.Core\Sandbox.Emailer.Core.csproj" />
+  </ItemGroup>
+
+</Project>

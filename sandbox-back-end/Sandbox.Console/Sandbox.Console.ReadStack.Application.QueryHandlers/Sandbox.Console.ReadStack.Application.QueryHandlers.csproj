@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{EB3C1835-08F3-48D5-9824-E5FFC7D81EAD}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Data.System.Core\Sandbox.Shared.Data.System.Core.csproj" />
+    <ProjectReference Include="..\Sandbox.Console.ReadStack.Application.Queries\Sandbox.Console.ReadStack.Application.Queries.csproj" />
+    <ProjectReference Include="..\Sandbox.Console.ReadStack.Core\Sandbox.Console.ReadStack.Core.csproj" />
+  </ItemGroup>
+</Project>

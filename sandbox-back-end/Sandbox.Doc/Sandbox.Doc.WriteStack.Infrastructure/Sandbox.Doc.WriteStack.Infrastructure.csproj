@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{2894FF60-ACEF-4095-B3BE-4C27858D19B6}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Data.Documents.EntityFrameworkCore\Sandbox.Shared.Data.Documents.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Domain\Sandbox.Doc.WriteStack.Domain.csproj" />
+  </ItemGroup>
+</Project>

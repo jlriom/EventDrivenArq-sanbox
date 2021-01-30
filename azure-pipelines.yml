@@ -1,0 +1,76 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'Sandbox'
+    organization: 'jlriom'
+    scannerMode: 'MSBuild'
+    projectKey: 'Sandbox_BackEnd'
+    projectName: 'Sandbox_BackEnd'
+    projectVersion: '$(Build.BuildNumber)'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/coverage/coverage.opencover.xml
+
+- task: DotNetCoreCLI@2
+  displayName: restore
+  inputs:
+    command: 'restore'
+    projects: 'sandbox-back-end/_Sandbox.TestSandbox/**/*.csproj'
+    feedsToUse: 'select'
+
+- task: DotNetCoreCLI@2
+  displayName: build
+  inputs:
+    command: 'build'
+    projects: 'sandbox-back-end/_Sandbox.TestSandbox/**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: test
+  inputs:
+    command: 'test'
+    projects: 'sandbox-back-end/_Sandbox.TestSandbox/**/*[Tt]ests/*.csproj'
+    arguments: '--logger trx  --collect "Code coverage"'
+
+- task: CmdLine@2
+  displayName: reportgenerator
+  inputs:
+    script: |
+      dotnet tool install dotnet-reportgenerator-globaltool --tool-path . 
+#      .\reportgenerator.exe "-reports:$(Build.SourcesDirectory)/coverage/coverage.opencover.xml" "-targetdir:coverage/Cobertura" "-reporttypes:Cobertura;HTMLInline;HTMLChart"
+
+- task: PublishTestResults@2
+  displayName: publishTestResults
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+
+- task: SonarCloudAnalyze@1
+
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(Build.SourcesDirectory)/coverage/Cobertura/Cobertura.xml'
+    reportDirectory: '$(Build.SourcesDirectory)/coverage/Cobertura'
+    

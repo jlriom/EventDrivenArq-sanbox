@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>{59497561-595B-4988-A438-C8068298E26D}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Api\Sandbox.Shared.Api.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.ReadStack.Application.Queries\Sandbox.Usr.ReadStack.Application.Queries.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.ReadStack.Application.QueryHandlers\Sandbox.Usr.ReadStack.Application.QueryHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.ReadStack.Core\Sandbox.Usr.ReadStack.Core.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.ReadStack.Infrastructure\Sandbox.Usr.ReadStack.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.WriteStack.Application.CommandHandlers\Sandbox.Usr.WriteStack.Application.CommandHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.WriteStack.Application.Commands\Sandbox.Usr.WriteStack.Application.Commands.csproj" />
+    <ProjectReference Include="..\Sandbox.Usr.WriteStack.Domain\Sandbox.Usr.WriteStack.Domain.csproj" />
+  </ItemGroup>
+</Project>

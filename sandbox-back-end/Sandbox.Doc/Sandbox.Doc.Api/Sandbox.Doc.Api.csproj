@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectGuid>{B237A572-F96A-4C18-AC35-48B53F10BDC5}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application.Services.BlobStorage\Common.Application.Services.BlobStorage.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.RabbitMq\Sandbox.Shared.Messaging.RabbitMq.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.ReadStack.Application.Queries\Sandbox.Doc.ReadStack.Application.Queries.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.ReadStack.Application.QueryHandlers\Sandbox.Doc.ReadStack.Application.QueryHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.ReadStack.Core\Sandbox.Doc.ReadStack.Core.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.ReadStack.Infrastructure\Sandbox.Doc.ReadStack.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Application.CommandHandlers\Sandbox.Doc.WriteStack.Application.CommandHandlers.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Application.Commands\Sandbox.Doc.WriteStack.Application.Commands.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Api\Sandbox.Shared.Api.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Application.Processes\Sandbox.Doc.WriteStack.Application.Processes.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Infrastructure\Sandbox.Doc.WriteStack.Infrastructure.csproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties properties_4launchsettings_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

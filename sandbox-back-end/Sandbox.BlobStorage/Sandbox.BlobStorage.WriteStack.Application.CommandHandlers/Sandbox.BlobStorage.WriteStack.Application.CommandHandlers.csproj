@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{003CAA4E-904F-4B69-A124-CCDDC269731C}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.WriteStack.Application.Commands\Sandbox.BlobStorage.WriteStack.Application.Commands.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.WriteStack.Domain\Sandbox.BlobStorage.WriteStack.Domain.csproj" />
+  </ItemGroup>
+</Project>

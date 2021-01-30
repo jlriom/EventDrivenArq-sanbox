@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{FDC2006B-F72E-4093-A436-1D2D64ABB772}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Data.EntityFrameworkCore\Common.Data.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Data.Blob.EntityFrameworkCore\Sandbox.Shared.Data.Blob.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Sandbox.BlobStorage.ReadStack.Core\Sandbox.BlobStorage.ReadStack.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{E43B8EC2-E24E-4AC8-858E-106889D94B5C}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Application.Cqs\Common.Application.Cqs.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Application.Services.BlobStorage\Common.Application.Services.BlobStorage.csproj" />
+    <ProjectReference Include="..\..\Sandbox.Shared\Sandbox.Shared.Messaging.Messages\Sandbox.Shared.Messaging.Messages.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Application.Commands\Sandbox.Doc.WriteStack.Application.Commands.csproj" />
+    <ProjectReference Include="..\Sandbox.Doc.WriteStack.Domain\Sandbox.Doc.WriteStack.Domain.csproj" />
+  </ItemGroup>
+</Project>
